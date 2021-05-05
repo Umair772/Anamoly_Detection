@@ -19,6 +19,7 @@ How to run on Icicle Kit:
 - After run_tutorial.sh has finished, transfer icicle/ into the icicle kit (e.g.: scp -r icicle root@IP:/home/root/)
 - On the icicle kit, navigate to icicle/example/sim-c/ and follow the instructions on the README.md located in that directory
 
-Has been tested on Windows Subsystem for Linux 1 (WSL1), under Ubuntu Bionic 18.04.5 LTS
-
+Has been tested on: 
+- Windows Subsystem for Linux 1 (WSL1), under Ubuntu Bionic 18.04.5 LTS
+- A Linux Machine, under Ubuntu Bionic 18.04.5 LTS
 
