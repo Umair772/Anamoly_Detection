@@ -27,5 +27,7 @@ Notes for Umair/Nancy:
 - Place sdk.zip in this directory
 - Place icicle-kit-simulator.zip in this directory
 - Place raw_data/ and raw_noise/ in this directory
+- 
 raw_data/ and raw_noise/ aren't in the repo simply cause they're big and you can get off google drive
+
 sdk.zip and icicle-kit-simulator.zip are not public releases yet, so there's no git repo that we can mark as a submodule nor a permanent mirror to download from
