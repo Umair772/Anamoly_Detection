@@ -97,6 +97,9 @@ echo -e "\n"
     curl -s https://codeload.github.com/PetteriAimonen/libfixmath/zip/master > icicle/example/sim-c/libfixmath-master.zip
     cp -r vnnx/example.tuned.vnnx icicle/example/sim-c/graph.vnnx
     cp -r vnnx/data/ icicle/example/sim-c/ 
+    
+    echo "Transferring the files to the icicle-kit"
+    scp -r icicle root@192.168.0.103:/home/root/
 
     echo "Finally, let us run the VBX simulator (desktop version) on the test data"
     cp -r vnnx/data/ sdk/example/sim-c/ 
