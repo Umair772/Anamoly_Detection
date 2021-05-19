@@ -101,16 +101,16 @@ echo -e "\n"
     echo "Transferring the files to the icicle-kit"
     scp -r icicle root@192.168.0.103:/home/root/
     
-    echo "Extracting the results of the tensorflow model from the log file"
-    sed -n 6351,6365p log.txt
+    ##echo "Extracting the results of the tensorflow model from the log file"
+    ##sed -n 6351,6365p log.txt
 
-   ## echo "Finally, let us run the VBX simulator (desktop version) on the test data"
-   ## cp -r vnnx/data/ sdk/example/sim-c/ 
-   ## cp vnnx/example.tuned.vnnx sdk/example/sim-c/graph.vnnx 
-   ## cp simulator_scripts/check_all.py sdk/example/sim-c/
-   ## cp simulator_scripts/sim-run-model.cpp sdk/example/sim-c/
-   ## cd sdk/example/sim-c/ 
-   ## python3 check_all.py graph.vnnx data/normal/ data/abnormal/
+    echo "Finally, let us run the VBX simulator (desktop version) on the test data"
+    cp -r vnnx/data/ sdk/example/sim-c/ 
+    cp vnnx/example.tuned.vnnx sdk/example/sim-c/graph.vnnx 
+    cp simulator_scripts/check_all.py sdk/example/sim-c/
+    cp simulator_scripts/sim-run-model.cpp sdk/example/sim-c/
+    cd sdk/example/sim-c/ 
+    python3 check_all.py graph.vnnx data/normal/ data/abnormal/
     
 } 2>&1 | tee -a "log.txt"
 
